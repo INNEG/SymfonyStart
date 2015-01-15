@@ -1,0 +1,93 @@
+/**
+ * basic layout
+ */
+	
+	/* colors */
+	#header,
+	#footer {
+		background-color: #f1f1f1;
+	}
+	
+	/* sizes */
+	#main-wrap > div {
+		min-height: 450px;
+	}
+	
+	
+	#header,
+	#footer {
+		min-height: 40px;
+	}
+	
+	
+
+	#main-wrap > div { min-height: 450px; }
+	
+	
+	#header {
+	    min-height: 23px;
+	}
+	#footer {
+	    min-height: 40px;
+	}
+	
+	
+	/* layout */
+	#main-wrap {
+	    /* overflow to handle inner floating block */
+	    overflow: hidden;
+	    border: 1px solid;
+	}
+	
+	#sidebar {
+	    float: left;
+	    width: 20%;
+	}
+	
+	#content-wrap {
+	    float: right;
+	    width: 80%;
+	}  
+	#header ul {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+#header li {
+	float: left;
+	border: 1px solid;
+	border-bottom-width: 0;
+	margin: 0 0.5em 0 0;
+}
+#header li a {
+	padding: 0 1em;
+}
+
+#header #selected {
+	position: relative;
+	top: 1px;
+	background: white;
+}
+
+#sidebartop {background: url(images/sb1.jpg) left top no-repeat; height:10px;}
+#sidebarbtm {background:url(images/sb3.jpg) left top no-repeat; height:9px;}
+#sidebar ul {list-style:none; font:bold 14px "Trebuchet MS", Verdana, sans-serif; margin-bottom:10px;}
+#sidebar li {display:block; height:36px; margin-bottom:2px;}
+#sidebar a, #sidebar a:visited {
+	display:block;
+	background:url(images/menu1.jpg) right top no-repeat;
+	padding: 10px 10px 0 40px;
+	height: 26px;
+	color:#999;
+}
+
+#sidebar a:hover {background:url(images/menu2.jpg) right top no-repeat; color:#333;}
+#sidebar .active a{background:url(images/menu3.jpg) right top no-repeat; color:#000;}
+#sidebar h2 {
+	display:block;
+	background:url(images/sidebarh2.jpg) no-repeat;
+	height:40px;
+	padding:14px 10px 0 40px;
+	color: #186185;
+	text-transform:uppercase;
+}

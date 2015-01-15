@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <title>{% block title %}.: DAC :.{% endblock %}</title>
+        {% block stylesheets %}
+            <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" />
+            <link href="{{ asset('css/bootstrap-theme.min.css') }}" rel="stylesheet" />
+            <link href="{{ asset('css/sticky-footer-navbar.css') }}" rel="stylesheet" />
+            <link href="{{ asset('css/stylesInvestDAC.css') }}" rel="stylesheet" />
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block top %}
+            <div class="bs-example">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a rel="nofollow"><img src="{{ asset('images/sigmpf.png') }}"/></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4" style=" font-size: x-large;
+                             font-family: fantasy;">
+                            <p class="navbar-text navbar-right">Direcci&oacute;n de An&aacute;lisis Criminal y </br> Planificaci&oacute;n de la Persecuci&oacute;n Penal</p>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div>
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                             
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            {% endblock %}
+            <div class="Central">
+            {% block central %}{% endblock %}
+        </div>
+    {% block body %}{% endblock %}
+    {% block javascripts %}
+        <script src="{{ asset('js/jquery/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
+    {% endblock %}
+    {% block footer %}
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"><span class="pull-left"><img src="{{ asset('images/logoaplicaciones.png') }}" style="height: 120%; width:120%"/></span></div>
+                    <div class="col-md-6"><span class="pull-right"><img src="{{ asset('images/DAC_Logo_300-01.png') }}" style="height: 70%; width:70%"/></span></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
+</body>
+</html>

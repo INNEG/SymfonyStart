@@ -1,0 +1,7 @@
+grafico_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: GraficoBundle:Default:index }
+
+graphic_homepage:
+    path:     /graphic
+    defaults: { _controller: GraficoBundle:Graphic:index }
